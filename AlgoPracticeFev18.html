@@ -102,6 +102,18 @@
 				}
 				$("#result3").text(result);	
 			});
+			$("#bouton4").click(function(){
+				var n = $("#n4").val();
+				var result = 1;
+				if(n<0 || n%1!=0){
+					result = "Entrez un nombre positive";
+				}else if(n>0){
+					for(var i=1; i<=n;i++){
+						result*=i;
+					}
+				}
+				$("#result4").text(result);	
+			});
 	});
 	</script>
 	</head>	
@@ -156,7 +168,15 @@
 		<button id="bouton3">Affiche résultat</button><br><br>
 		<p id="result3"></p>
     </div>
-		
+	<div class="col-sm-8 text-left">       
+        <h3>4) Factorial number</h3>
+        <p>Write a java program to print factorial of a number.<br><br>Input: 5<br><br>Output: 120<br><br>Input: 6<br><br>Output: 720<br><br></p><hr>
+		<p>Veuillez entrer un nombre positive</p>	
+		<input type="text" id="n4"></input><br><br>
+		<button id="bouton4">Affiche résultat</button><br><br>
+		<p id="result4"></p>
+    </div>
+	
   </div>
    </div>	
 
