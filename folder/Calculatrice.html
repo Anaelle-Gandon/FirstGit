@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Calculatrice </title>
+	</head>
+	<body>
+		<!-- <label>EUROS</label>  
+		<input id="eurosInput">
+		<br><br> -->
+		<input id="aInput">
+		<input id="bInput">
+		<input type="button" id="addition" value="+">
+		<input type="button" id="soustraction" value="-">
+		<input type="button" id="multiplication" value="*">
+		<input type="button" id="division" value="/">
+		<br><br><br>
+		<button id="souButton">SOUMISSION</button>
+		<p id="demo"></p>
+		<script>
+			
+			function calCule(a, x, b){
+				var resultat;
+				var a = aInput.value;
+				var b = bInput.value;
+				var x;
+				if(x == addition.value){
+				resultat = a + b;}
+				if(x == soustraction.value){
+				resultat = a - b;}
+				if(x == multiplication.value){
+				resultat = a * b;}
+				if(x == division.value){
+				resultat = a / b;}
+				
+				return document.getElementById("demo").innerHTML = resultat;
+			}
+			souButton.onclick = calCule();
+			
+		</script>
+		
+	</body>
+</html>
